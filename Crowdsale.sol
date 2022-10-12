@@ -4,6 +4,9 @@ pragma solidity ^0.8.0;
 import "./Token.sol";
 
 contract Crowdsale {
+    // For 1 wei sent to the contract, 200 units of tokens are given -
+    // The decimals number is the same for ETH and for our tokens, so
+    // for 1 ETH sent to the contract, 200 tokens are given.
     uint256 public rate = 200;
 
     Token public token;
